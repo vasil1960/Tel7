@@ -36,7 +36,8 @@ Ext.define('Tel.view.main.Main', {
             layout: 'fit',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
-                xtype: 'mainlist'
+                xtype: 'mainlist',
+                title:"fff"
             }]
         },{
             title: 'РДГ',
@@ -56,6 +57,13 @@ Ext.define('Tel.view.main.Main', {
             bind: {
                 html: '{loremIpsum}'
             }
+        },{
+            title: 'Search',
+            iconCls: 'x-fa fa-cog',
+            bind: {
+                html: '{loremIpsum}'
+            }
         }
+
     ]
 });

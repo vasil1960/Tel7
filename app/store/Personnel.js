@@ -4,7 +4,7 @@ Ext.define('Tel.store.Personnel', {
     alias: 'store.personnel',
 
     fields: [
-        'name', 'email', 'phone'
+        'name', 'fam', 'gsm','pod','egn','email'
     ],
 
     autoLoad:'true',
@@ -18,10 +18,13 @@ Ext.define('Tel.store.Personnel', {
 
     proxy: {
         type: 'ajax',
-        url: 'test.json',
+        url: 'http://laravelapp.iag.bg/api/iagusers',
+        enablePaging: true,
         reader: {
             type: 'json',
-            rootProperty: ''
+            rootProperty: 'data'
         }
-    }
+    },
+    pageSize: 2
+
 });
