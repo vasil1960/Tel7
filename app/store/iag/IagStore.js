@@ -1,7 +1,7 @@
-Ext.define('Tel.store.Personnel', {
+Ext.define('Tel.store.iag.IagStore', {
     extend: 'Ext.data.Store',
 
-    alias: 'store.personnel',
+    alias: 'store.iagstore',
 
     fields: [
         'name', 'fam', 'gsm','pod','egn','email','glavpod','picture'

@@ -14,7 +14,8 @@ Ext.define('Tel.view.main.Main', {
 
         'Tel.view.main.MainController',
         'Tel.view.main.MainModel',
-        'Tel.view.main.List'
+        'Tel.view.main.List',
+
     ],
 
     controller: 'main',
@@ -36,15 +37,21 @@ Ext.define('Tel.view.main.Main', {
             layout: 'fit',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
-                xtype: 'mainlist',
-                title:"fff"
+                xtype: 'iaglist',
+                // title:"fff"
             }]
         },{
             title: 'РДГ',
             iconCls: 'x-fa fa-user',
-            bind: {
-                html: '{loremIpsum}'
-            }
+            layout: 'fit',
+            items: [{
+                xtype: 'rdglist',
+                // title:"fff"
+            }]
+
+            // bind: {
+            //     html: '{loremIpsum}'
+            // }
         },{
             title: 'Groups',
             iconCls: 'x-fa fa-users',

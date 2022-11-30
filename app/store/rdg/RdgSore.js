@@ -1,10 +1,10 @@
-Ext.define('Tel.store.Personnel', {
+Ext.define('Tel.store.rdg.RdgStore', {
     extend: 'Ext.data.Store',
 
-    alias: 'store.personnel',
+    alias: 'store.rdgstore',
 
     fields: [
-        'name', 'fam', 'gsm','pod','egn','email','glavpod','picture'
+        'podname', 'address', 'tel','email',
     ],
 
     autoLoad:'true',
@@ -18,7 +18,7 @@ Ext.define('Tel.store.Personnel', {
 
     proxy: {
         type: 'ajax',
-        url: 'http://laravelapp.iag.bg/api/iagusers',
+        url: 'http://laravelapp.iag.bg/api/rdgpodelenia',
         enablePaging: true,
         reader: {
             type: 'json',

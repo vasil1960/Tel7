@@ -1,18 +1,18 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('Tel.view.main.List', {
+ Ext.define('Tel.view.iag.IagList', {
     extend: 'Ext.dataview.List',
-    xtype: 'mainlist',
+    xtype: 'iaglist',
 
     requires: [
-        'Tel.store.Personnel'
+        'Tel.store.iag.IagStore'
     ],  
     
     title: 'Personnel',
 
     store: {
-        type: 'personnel'
+        type: 'iagstore'
     },
 
     itemTpl: [
